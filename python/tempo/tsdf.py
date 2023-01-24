@@ -666,8 +666,9 @@ class TSDF:
         :param spark - Spark session which is used to query the view obtained from the Spark data frame
         """
 
-        df.createOrReplaceTempView("view")
-        plan = spark.sql("explain cost select * from view").collect()[0][0]
+        #df.createOrReplaceTempView("view")
+        #plan = spark.sql("explain cost select * from view").collect()[0][0]
+        plan = df._sc._jvm.PythonSQLUtils.explainString(df._jdf.queryExecution(), "cost")
 
         import re
 
