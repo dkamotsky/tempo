@@ -13,7 +13,7 @@ with open("./README.md", "r") as fh:
 #
 setup(
     name="dbl-tempo",
-    version="0.1.22.dlt_1",
+    version="0.1.26.dlt_1",
     author="Ricardo Portilla, Tristan Nixon, Max Thone, Sonali Guleria, Denis Kamotsky",
     author_email="dkamotsky@gmail.com",
     description="Spark Time Series Utility Package",
