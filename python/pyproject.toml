@@ -1,2 +1,0 @@
-[build-system]
-requires = ["semver"]  # PEP 518 - what is required to build
